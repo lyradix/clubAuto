@@ -1,0 +1,50 @@
+.barSection {
+  max-width: 800px;
+  margin: 2rem auto;
+  font-family: sans-serif;
+}
+
+/* Cache les inputs radio */
+.barSection input[type="radio"] {
+  display: none;
+}
+
+/* Style des onglets */
+.barSection label {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background: #ccc;
+  margin-right: 5px;
+  cursor: pointer;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.barSection label:hover {
+  background: #bbb;
+}
+
+/* Style des contenus */
+.content {
+  display: none;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+}
+
+/* Affiche le bon contenu selon l’onglet sélectionné */
+#desc:checked ~ .desc,
+#tech:checked ~ .tech,
+#opt:checked ~ .opt,
+#contact:checked ~ .contact {
+  display: block;
+}
+
+/* Onglet actif (optionnel : colorier l’onglet sélectionné) */
+#desc:checked + label,
+#tech:checked + label,
+#opt:checked + label,
+#contact:checked + label {
+  background: #eaeaea;
+  font-weight: bold;
+}
