@@ -206,6 +206,8 @@ li{
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1rem;
     padding: 1rem 1rem 3rem 0rem;
+       padding-left: 120px;
+    padding-right: 120px;
 }
 .vehicleProductTitle{
     background-color: #484a4b;

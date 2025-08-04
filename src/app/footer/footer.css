@@ -1,0 +1,109 @@
+.footer{
+    background-color: #232628;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #6c757d;
+      display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 0rem;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+.social-media {
+    display: flex;
+    /* gap: 1rem; */
+    flex-direction: column;
+   
+}
+
+label{
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: start;
+      display: flex;
+
+    width: 100%;
+}
+
+.description {
+    font-size: 12px;
+    margin-top: 0.5rem;
+    align-items: center;
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
+    text-align: justify;
+}
+
+.open-hours {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* width: 300px; */
+}
+.newsletter-container,.contact-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+   
+}
+.newsletter-container{
+    display: flex;
+    flex-direction: flex-start;
+    gap: 0rem;
+     width: 200px;
+}
+.newsletter-label{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.infoInscription{
+    display: flex;
+    text-align: justify;
+}
+.contact-container{
+    gap: 1rem;
+    width: 300px;
+}
+
+.send-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #d07016;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-color: #6c757d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
