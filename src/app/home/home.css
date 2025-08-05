@@ -41,6 +41,7 @@ a {
     height: 5rem;
   background-color: #232628;
     justify-content:left;
+    margin-top: 500px;
     padding-top: 15px;
     padding-bottom: 8px;
     padding-left: 24%;
@@ -53,6 +54,22 @@ a {
 margin-right: -8px;
 justify-content:left;
 padding-left: 0.3rem;
+}
+
+.imageSection{
+    position: absolute;
+    width: 100%;
+     height: 45rem;
+    top:0px;
+    /* crop: rect(0, 0, 0, 0); */
+    /* max-height: 15rem; */
+    /* top: 1px; */
+    object-fit: cover;
+    object-position: top;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 
 .intro{
@@ -70,10 +87,8 @@ padding-left: 0.3rem;
     align-items: center;
     gap: 1rem;
     padding-top: 2rem;
-    padding-left: 12%;
-    padding-right: 12%;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 
 .splitColumnText{
@@ -113,9 +128,9 @@ li{
     z-index: -1;
 }
 .vehicleProductImage{
-    width: 15rem;
-    height: 100%;
-    max-height: 20rem;
+    width: 27rem;
+    height: 300px;
+    max-height: 30rem;
     padding-left: 1rem;
     object-fit: cover;
  
@@ -186,10 +201,10 @@ li{
     align-items: center;
     gap: 1rem;
     padding-top: 5rem;
-    padding-left: 12%;
-    padding-right: 12%;
-    margin-left: 10rem;
-    margin-right: 10rem;
+
+    margin-left: 250px;
+    margin-right: 250px;
+
 }
 .vehicleProduct{
     display: flex;
@@ -199,7 +214,7 @@ li{
     border-radius: 0.5rem;
     padding: 1rem;
     text-align: center;
-    width: 15rem;
+    width: 27rem;
 }
 
 .vehiclesGrid{
@@ -208,9 +223,9 @@ li{
     align-items: center;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1rem;
-    padding: 1rem 1rem 3rem 0rem;
-       padding-left: 120px;
-    padding-right: 120px;
+    /* padding: 1rem 1rem 3rem 0rem; */
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .vehicleProductTitle{
     background-color: #484a4b;

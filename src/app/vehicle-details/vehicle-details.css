@@ -2,6 +2,7 @@
   max-width: 800px;
   margin: 2rem auto;
   font-family: sans-serif;
+  background: #232628;
 }
 
 
@@ -13,15 +14,24 @@
 .barSection label {
   display: inline-block;
   padding: 0.7rem 1.5rem;
-  background: #ccc;
+  background: #232628;
+  color: #fff;
   margin-right: 5px;
   cursor: pointer;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+
 }
 
 .barSection label:hover {
-  background: #bbb;
+
+}
+
+.subTitle {
+  font-size: 1.2rem;
+  background-color: inherit;
+}
+
+.subTitle:hover, .subTitle:focus {
+     border-top: 5px solid #CC6119;
 }
 
 
@@ -47,4 +57,12 @@
 #contact:checked + label {
   background: #eaeaea;
   font-weight: bold;
+}
+
+.vehicleImage {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
 }
