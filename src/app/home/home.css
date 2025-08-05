@@ -26,7 +26,10 @@ h3{
 p{
   font-size: 0.8rem;
 }
-
+a {
+    text-decoration: none;
+    color: #fff;
+}
 .header-row, .subheader-row{
   display: flex;
   gap: 1rem; 
