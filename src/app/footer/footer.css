@@ -144,9 +144,8 @@ label{
         text-align: center;
     }
     .newsletter-container, .contact-container {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+        width: auto;
+        gap: 0.5rem;
     }
     .send-icon {
         width: 40px;
@@ -163,9 +162,25 @@ label{
         text-align: center;
     }
 
+    input{
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
 
+    .send-icon {
+        width: 70px;
+        height: 70px;
+        padding: 0rem;
+    }
     img{
         width: 100%;
         height: auto;
+        object-fit: cover;
+    }
+
+    .description {
+        font-size: 0.8rem;
+        text-align: center;
     }
 }

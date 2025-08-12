@@ -3,24 +3,24 @@
   display: flex;
   gap: 1rem; 
   align-items: center;
-  margin-left:-5px;
 }
 
 .header-row {
     height: 5rem;
-  background-color: #232628;
-    justify-content:left;
+    background-color: #232628;
     margin-top: 500px;
     padding-top: 15px;
     padding-bottom: 8px;
-    padding-left: 24%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
 }
 
 .titleOrange{
     color: #CC6119;
 }
 .subheader-row h2 {
-margin-right: -8px;
 justify-content:left;
 padding-left: 0.3rem;
 }
@@ -44,7 +44,14 @@ padding-left: 0.3rem;
 .intro{
  font-weight: bold;
 }
-
+.introduction{
+    font-size: 1.2rem;
+    color: #232628;
+    padding-left: 220px;
+    padding-right: 220px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 .subheader{
     font-weight: 700;
 }
@@ -56,8 +63,8 @@ padding-left: 0.3rem;
     align-items: center;
     gap: 1rem;
     padding-top: 2rem;
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .splitColumnText{
@@ -97,14 +104,23 @@ li{
     z-index: -1;
 }
 .vehicleProductImage{
-    width: 27rem;
+    width: 100%;
     height: 300px;
     max-height: 30rem;
-    padding-left: 1rem;
+    padding-left: 0rem;
     object-fit: cover;
  
 }
 
+.priceText{
+    color: #ffffff;
+}
+.priceTextStroked{
+    color: #2c2928;
+    text-decoration:line-through 2px;
+    justify-content: center;
+    align-items: center;
+}
 .wishBoxYellow, .wishBoxRed{
     padding:1.5rem 1rem 2rem 1rem;
     justify-content: center;
@@ -163,18 +179,26 @@ li{
     justify-content: center;
     align-items: center;
 }
+
+.wishBoxes{
+ display: flex;
+       /* flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;*/
+    padding-top: 2rem; 
+    padding-left: 220px;
+    padding-right:220px;
+}
 .splitColumnsVehicles{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    padding-top: 5rem;
-
-    margin-left: 250px;
-    margin-right: 250px;
-
+    width: 100%;
 }
+
 .vehicleProduct{
     display: flex;
     flex-direction: column;
@@ -183,7 +207,9 @@ li{
     border-radius: 0.5rem;
     padding: 1rem;
     text-align: center;
-    width: 27rem;
+    width: 20rem;
+    height: 20rem;
+    padding: auto;
 }
 
 .vehiclesGrid{
@@ -198,21 +224,24 @@ li{
 }
 .vehicleProductTitle{
     background-color: #484a4b;
-    width: 14rem;
-    margin-left: 1rem;
+    width: 100%;
+    margin-left: 0rem;
     opacity: 0.9;
 }
 .splitColumnsProduct{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: left;
-    gap: 1rem;
-    padding-top: 0.5rem;
+    /* align-items: left; */
+    /* gap: 1rem; */
+    padding-top: 0rem;
     padding-left: 0rem;
-    padding-right: 0.5rem;
+    padding-right: 0rem;
 }
 .productTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
     font-size: 0.8rem;
     color:#ffffff;
@@ -222,11 +251,46 @@ li{
     background-color: #6C98E1;
     color: #fff;
     border: none;
+    height: 3rem;
     width: 5rem;
-    height: 1.5rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    /* margin-bottom: 5px; */
+    padding: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 0.1rem; */
+    height: 3rem;
+    /* min-height: 1.5rem; */
+    font-weight: 800;
+    /* letter-spacing: 0.3px; */
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.5);
+    /* white-space: normal; */
+}
+
+.btnPriceDouble{
+    background-color: #6C98E1;
+    color: #fff;
+    border: none;
+    height: 3rem;
+    width: 5rem;
     cursor: pointer;
     font-size: 0.8rem;
     margin-bottom: 5px;
+    padding: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+    height: 3rem;
+    min-height: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.5);
+    white-space: normal;
 }
 
 .split4Columns{
@@ -236,10 +300,8 @@ li{
     align-items: center;
     gap: 2rem;
     padding-top: 2rem;
-    padding-left: 12%;
-    padding-right: 12%;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    padding-left: 220px;
+    padding-right: 220px;
 }
 .split2Column{
     display: flex;
@@ -248,9 +310,9 @@ li{
 }
 
 .iconImage{
-    height: 2rem;
-    width: 2rem;
-    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    object-fit: stretch;
 }
 .iconTitle{
     font-weight: bold;
@@ -294,6 +356,17 @@ li{
     background-color: #5a7bbf;
     transition: background-color 0.3s ease-in-out;
 }
+
+/* Global link styles for buttons and other elements */
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.btnContact a, .btnPrice a {
+    color: #fff !important;
+    text-decoration: none !important;
+}
 .moreDetailSection{
     display: flex;
     padding-top: 2rem;
@@ -328,13 +401,21 @@ opacity: 0.8;
 .subMoreDetailsTilte{
     color:#ffffff;
 }
+
+.tickLogo{
+    height: 20px;
+    width: 20px;
+    margin-right: 0.5rem;
+}
 @media screen and (max-width: 1224px) {
    .splitColumns{
     margin-left: 0rem;
     margin-right: 0rem;
 }
-.header-row {
-    padding-left: 12%;
+
+.wishBoxes{
+    padding-left: 0px;
+    padding-right:0px;
 }
     .splitColumnsVehicles{
      margin-left: 0rem;
@@ -359,7 +440,10 @@ opacity: 0.8;
 }
 
 @media screen and (max-width: 480px) {
-
+.introduction{
+    padding-left: 0px;
+    padding-right: 0px;
+}
  .titleOrange{
     display: flex;
     justify-content: center;
@@ -417,8 +501,7 @@ opacity: 0.8;
     }
 
     .split2Column{
-        flex-direction: column;
-        align-items: center;
+    width: 100%;
     }
 
     .splitColumnText{
@@ -496,7 +579,7 @@ opacity: 0.8;
     }
 
     .widhParagraph{
-        font-size: 0.6rem;
+        font-size: 22px;
 
     }
 

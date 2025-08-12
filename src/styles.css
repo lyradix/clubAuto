@@ -26,10 +26,11 @@ h3{
 
 p{
   font-size: 0.8rem;
+  font-family:'Open Sans', Arial, sans-serif;
 }
-a {
-    text-decoration: none;
-    color: #fff;
+a{
+   
+    font-family:'Open Sans', Arial, sans-serif;
 }
 
 *{
@@ -56,9 +57,7 @@ html{
     height: 100%;
     width: 100%;
 }
-body{
-     font-family:'Montserrat', Arial, sans-serif;
-}
+
 
 @media (max-width: 480px) {
    html, body {
@@ -75,6 +74,14 @@ body{
         padding: auto;
         align-items: center;
         justify-content: center;
+        padding: 0.5rem;
+    }
+
+    style{
+        font-size: 28px;
+    }
+    label, li{
+        font-size: 0.8rem;
     }
 
 }
