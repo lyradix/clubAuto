@@ -1,35 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-h1{
-  font-family:'Montserrat', Arial, sans-serif;
-  font-size: 20px;
-  font-weight: 700;
- letter-spacing: 1.5px;
-  color: #fff;
-
-}
-
-h2, h3, p{
-  font-family:'Open Sans', Arial, sans-serif;
-}
-
-h2{
-  font-size: 0.95rem;
-}
-
-h3{
-  font-size: 0.9rem;
-}
-
-p{
-  font-size: 0.8rem;
-}
-a {
-    text-decoration: none;
-    color: #fff;
-}
 .header-row, .subheader-row{
   display: flex;
   gap: 1rem; 
@@ -387,4 +356,166 @@ opacity: 0.8;
      padding-right: 0rem;
     }
     
+}
+
+@media screen and (max-width: 480px) {
+
+ .titleOrange{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+   .header-row {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+     height:auto;
+     width: 100%;
+    }
+    .subheader-row h2 {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 0.8rem;
+    }
+    .imageSection{
+        height: 0px;
+        display: none;
+    }
+    .splitColumns{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0rem;
+        margin-right: 0rem;
+         display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    }
+    .splitColumnsVehicles{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+    .splitColumnsProduct{
+        flex-direction: column;
+        align-items: center;
+    }
+    .split4Columns{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    .split2Column{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .splitColumnText{
+        width: 100%;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+.wishBoxRed{
+    width: 100%;
+    height: 15rem;
+    padding: 1rem;
+        margin-left: 0rem;
+    margin-bottom: 1rem;
+}
+
+.wishBoxYellow{
+    width: 100%;
+    height: 15rem;
+    padding: 1rem;  
+
+    margin-bottom: 1rem;
+}
+    .vehicleProduct{
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .vehicleProductImage{
+        width: 100%;
+        height: 50rem;
+    }
+
+    .moreDetailSection{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0; 
+        width: 100%;
+    }
+.moredetailCenter{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center; 
+    }
+    .moreDetailBox{
+        width: 90%; 
+        padding: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 0; 
+        margin-right: 0; 
+    }
+    .vehicleProductImage{
+        width: 100%;
+        height: auto;
+        max-height: 20rem;
+    }
+
+    .homeColumnImages{
+        width: 100%;
+        height: auto;
+        max-height: 20rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .paragraphe, li{
+        font-size: 0.7rem;
+    }
+
+    .widhParagraph{
+        font-size: 0.6rem;
+
+    }
+
+    .vehiclesGrid{
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        padding-left: 0rem;
+        padding-right: 0rem;
+        overflow:scroll;
+        scroll-behavior: smooth;
+
+    }
+
+    .vehicleImages{
+        width: 100%;
+
+    }
+
+    .vehicleTile{
+        font-size: 1.2rem;
+        padding-top: 1rem;
+    }
 }

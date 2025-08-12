@@ -112,3 +112,40 @@ li:hover{
     color:#fff;
     background-color: #CC6119;
 }
+
+@media (max-width: 480px) {
+    .nav-links {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        align-items: center;
+    }
+    .nav-menu {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    li {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+
+    .split2col{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-details {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+        
+    }
+
+    .open-hours {
+        width: 100%;
+        text-align: center;
+    }
+}
