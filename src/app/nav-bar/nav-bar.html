@@ -1,53 +1,57 @@
 
 
 <div class="nav-bar">
-
-    <div class="contact-details">
-    <h1 class="title"><a class="navTitle" href="#">CLUB AUTO</a></h1>
-    <p class="navContact">
-          <img src="icone-adresse.png" alt="Location Icon" class="iconLogo">
-            <span class="split2Rows">
-                <span class="highlight">Adresse:</span>
-                <span>Avenue Charles de Gaulle</span>
-                <span> 75000 Paris</span>
-            </span>
-        </p>
-        <p class="navContact">
-            <img src="icon-telephone.png" alt="Telephone Icon" class="iconLogo">
-            <span class="split2Rows">
-                <span class="highlight">Téléphone: </span>
-                <span>01 23 45  67  89</span>
-            </span>        
-        </p>
-    <!-- <div class="navContact"> -->
-            <ul class="open-hours">
-                <li class="fitNavLi">
-                    <p class="highlight">Ouvertures :</p>
-                    <span class="open-hours-details"> Du Lundi au samedi:</span></li>
-                 <li class="fitNavLi">
-                    <p class="highlight">Horaires :</p>
-                    <span class="open-hours-details"> 9h00 - 17h00</span></li>
-            </ul>
-        <div>
-       <!-- </div> -->
-            <ul class="split2col">
-                <li class="socialNaLi">
-                    <a  href="https://www.facebook.com" target="_blank">
-                        <img src="logoFacebook.png" alt="logo facebook" class="iconLogoCircle"/>
-                    </a>
-                </li>
-                <li class="socialNaLi">
-                    <a  href="https://www.x.com" target="_blank">
-                        <img src="logoTwitter.png" alt="logo facebook" class="iconLogoCircle"/>
-                    </a>
-                </li>
-            </ul>
-     
-    </div> 
+    <div class="navBox">
+        <div class="contact-details">
+            <h1 class="title"><a class="navTitle" href="#">CLUB AUTO</a></h1>
+            <p class="navContact">
+                <img src="icone-adresse.png" alt="Location Icon" class="iconLogo">
+                    <span class="split2Rows">
+                        <span class="highlight">Adresse:</span>
+                        <span>Avenue Charles de Gaulle</span>
+                        <span> 75000 Paris</span>
+                    </span>
+            </p>
+            <p class="navContactTel">
+                <img src="icon-telephone.png" alt="Telephone Icon" class="iconLogo">
+                <span class="split2Rows">
+                    <span class="highlight">Téléphone: </span>
+                    <span>01 23 45  67  89</span>
+                </span>        
+            </p>
+        <!-- <div class="navContact"> -->
+                <ul class="open-hours">
+                    <li class="fitNavLi">
+                        <p class="highlight">Ouvertures :</p>
+                        <span class="open-hours-details"> Du Lundi au samedi:</span></li>
+                    <li class="fitNavLi">
+                        <p class="highlight">Horaires :</p>
+                        <span class="open-hours-details"> 9h00 - 17h00</span></li>
+                </ul>
+            <div>
+        <!-- </div> -->
+                <ul class="split2col">
+                    <li class="socialNaLi">
+                        <a  href="https://www.facebook.com" target="_blank">
+                            <img src="logoFacebook.png" alt="logo facebook" class="iconLogoCircle"/>
+                        </a>
+                    </li>
+                    <li class="socialNaLi">
+                        <a  href="https://www.x.com" target="_blank">
+                            <img src="logoTwitter.png" alt="logo facebook" class="iconLogoCircle"/>
+                        </a>
+                    </li>
+                </ul>
+        
+        </div> 
+    </div>
+        <div class="MenuBurger" (click)="toggleMenu()">
+                    <p class="line">___</p>
+                    <p class="line">___</p>
+                    <p class="line">___</p>
+                </div>
+    </div>
 </div>
-    
-</div>
-
 <nav class="nav-menu">
     <ul class="nav-links">
         <li><a class="menuNava" routerLink="/home">Accueil</a></li>
