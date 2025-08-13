@@ -9,4 +9,21 @@ import { RouterLink } from '@angular/router';
 })
 export class Home {
 
+
+  toggleMenu() {
+    if (document.querySelector('.MenuBurger')) {
+      // Toggle the active class on the nav menu
+      const menuBurger = document.querySelector('.MenuBurger') as HTMLElement;
+      const navMenu = document.querySelector('.nav-menu') as HTMLElement;
+      
+      if (navMenu) {
+        navMenu.classList.toggle('active');
+      }
+      
+      // Also toggle active class on the MenuBurger itself for animation
+      menuBurger.classList.toggle('active');
+    }
+  }
+
+
 }

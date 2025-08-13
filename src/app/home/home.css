@@ -409,6 +409,10 @@ opacity: 0.8;
     width: 20px;
     margin-right: 0.5rem;
 }
+
+.MenuBurger{
+    display: none;
+}
 @media screen and (max-width: 1224px) {
    .splitColumns{
     margin-left: 0rem;
@@ -497,9 +501,11 @@ opacity: 0.8;
     }
     .split4Columns{
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
         margin-left: 0rem;
         margin-right: 0rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 
     .split2Column{
@@ -526,15 +532,43 @@ opacity: 0.8;
 
     margin-bottom: 1rem;
 }
-    .vehicleProduct{
+    .vehiclesGrid{
+        position: relative;
+        /* display: flex; */
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+        padding-left: 20px;
+        padding-right: 20px;
+        overflow-x: scroll;
+    }
+
+    .vehicleImages{
         width: 100%;
+
+    }
+
+    .vehicleTile{
+        font-size: 1.2rem;
+        padding-top: 1rem;
+    }
+    .vehicleProduct{
+        width: 380px; 
+        flex: 0 0 auto; 
         padding: 1rem;
+        padding-bottom: 0rem;
         margin-bottom: 1rem;
+        margin-right: 0rem;
+        scroll-snap-align: start;
     }
 
     .vehicleProductImage{
         width: 100%;
         height: 50rem;
+        max-height: 50rem;
+        padding-left: 0rem;
+        object-fit: unset;
     }
 
     .moreDetailSection{
@@ -585,22 +619,35 @@ opacity: 0.8;
 
     }
 
-    .vehiclesGrid{
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        padding-left: 0rem;
-        padding-right: 0rem;
-        overflow:scroll;
-        scroll-behavior: smooth;
+    .MenuBurger{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        padding: 1rem;
+        transition: all 0.3s ease;
 
+        .line{
+            width: 30px;
+            height: 3px;
+            background-color: #fff;
+            margin: 2px 0;
+            transition: all 0.3s ease;
+        }
+    }
+    
+    /* Add styles for the active menu burger */
+    .MenuBurger.active .line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .MenuBurger.active .line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .MenuBurger.active .line:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
     }
 
-    .vehicleImages{
-        width: 100%;
-
-    }
-
-    .vehicleTile{
-        font-size: 1.2rem;
-        padding-top: 1rem;
-    }
 }

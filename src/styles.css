@@ -58,10 +58,11 @@ html{
     }
 
     main{
-        padding: auto;
+        width: 100vw;
+        /* padding: auto; */
         align-items: center;
         justify-content: center;
-        padding: 0.5rem;
+        /* padding: 0.5rem; */
     }
 
     style{

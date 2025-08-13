@@ -59,4 +59,5 @@ export class NavBar implements OnInit, OnDestroy {
       this.scrollCount = 0;
     }
   }
+
 }

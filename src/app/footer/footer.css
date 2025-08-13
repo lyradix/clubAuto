@@ -162,5 +162,13 @@ label{
     .description {
         font-size: 0.8rem;
         text-align: center;
+        justify-content: center;
+    }
+
+    .infoInscription {
+        font-size: 0.8rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
