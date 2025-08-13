@@ -139,7 +139,7 @@ textarea {
     width:250px;
 }
 
-@media (max-width: 480px){
+@media screen and (max-width: 480px) {
     .contact-container{
        margin-top: 5rem;
          /* display: flex; */
@@ -193,4 +193,5 @@ input, textarea {
     background-color: #ECEFF3;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
 }
