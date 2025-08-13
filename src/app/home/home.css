@@ -8,7 +8,7 @@
 .header-row {
     height: 5rem;
     background-color: #232628;
-    margin-top: 500px;
+    margin-top: 700px;
     padding-top: 15px;
     padding-bottom: 8px;
     display: flex;
@@ -251,18 +251,19 @@ li{
     background-color: #6C98E1;
     color: #fff;
     border: none;
-    height: 3rem;
+    height: 2.5rem;
     width: 5rem;
     cursor: pointer;
     font-size: 0.8rem;
-    /* margin-bottom: 5px; */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
     padding: 0.1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* gap: 0.1rem; */
-    height: 3rem;
     /* min-height: 1.5rem; */
     font-weight: 800;
     /* letter-spacing: 0.3px; */
@@ -274,15 +275,17 @@ li{
     background-color: #6C98E1;
     color: #fff;
     border: none;
-    height: 3rem;
+    height: 2rem;
     width: 5rem;
     cursor: pointer;
     font-size: 0.8rem;
-    margin-bottom: 5px;
     padding: 0.1rem;
+     margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 0.1rem;
     height: 3rem;
@@ -352,7 +355,7 @@ li{
     margin-left: 1rem;
 }
 
-.btnContact:hover{
+.btnContact:hover, .btnPrice:hover, .btnPriceDouble:hover {
     background-color: #5a7bbf;
     transition: background-color 0.3s ease-in-out;
 }
@@ -362,7 +365,6 @@ a {
     text-decoration: none !important;
     color: inherit !important;
 }
-
 .btnContact a, .btnPrice a {
     color: #fff !important;
     text-decoration: none !important;
