@@ -61,11 +61,16 @@ label{
     text-align: justify;
 }
 
-.open-hours {
+.openHours {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     /* width: 300px; */
+    margin-bottom: 1rem;
+}
+
+.openHoursLi{
+    color:#fff;
 }
 .newsletter-container,.contact-container{
     display: flex;
@@ -161,14 +166,21 @@ label{
 
     .description {
         font-size: 0.8rem;
-        text-align: center;
+        text-align: left;
         justify-content: center;
     }
 
+    .openHours {
+        font-size: 0.8rem;
+        align-items: justify;
+        text-align: left;
+        padding: 0rem;
+        left:0px;
+    }
     .infoInscription {
         font-size: 0.8rem;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        align-items: justify;
+        text-align: left;
     }
 }
